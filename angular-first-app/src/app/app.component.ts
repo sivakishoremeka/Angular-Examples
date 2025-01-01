@@ -15,14 +15,14 @@ import { DUMMY_USERS } from './dummy-users';
 export class AppComponent {
   title = 'angular-first-app';
   users = DUMMY_USERS;
-  selectedUserId = 'u1';
+  selectedUserId?:string;
 
   onUserSelected(id:string){
     this.selectedUserId = id;
   }
 
   get SelectedUser(){
-    return this.users.find((user)=> user.id === this.selectedUserId)
+    return this.users.find((user)=> user.id === this.selectedUserId);
   }
 
 }
