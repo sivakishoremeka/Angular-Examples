@@ -7,7 +7,7 @@ export interface Task {
 }
 
 export interface NewTaskData {
-    newTitle: string;
-    newSummary: string;
-    newDueDate: string;
-  }
+  title: string;
+  summary: string;
+  date: string;
+}
