@@ -13,11 +13,11 @@
         @for (investMentResult of investMentResults; track investMentResult.year) {
             <tr>
                 <td>{{investMentResult.year}}</td>
-                <td>{{investMentResult.interest}}</td>
-                <td>{{investMentResult.valueEndOfYear}}</td>
-                <td>{{investMentResult.annualInvestment}}</td>
-                <td>{{investMentResult.totalInterest}}</td>
-                <td>{{investMentResult.totalAmountInvested}}</td>
+                <td>{{investMentResult.interest|currency}}</td>
+                <td>{{investMentResult.valueEndOfYear|currency}}</td>
+                <td>{{investMentResult.annualInvestment|currency}}</td>
+                <td>{{investMentResult.totalInterest|currency}}</td>
+                <td>{{investMentResult.totalAmountInvested|currency}}</td>
             </tr>
         }
     </tbody>
